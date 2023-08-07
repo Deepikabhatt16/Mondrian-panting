@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid+sizing</title>
+    <style>
+        body{padding: 0;
+            height: 100vh;
+            background-color: rgb(223, 255, 255);
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+  .mainbox{
+    border: 2px  solid sandybrown;
+    box-shadow: 5.5px 8px 7px rgb(36, 16, 16);
+    background: #000;
+    display:grid;
+    grid-template-columns: 220px 98px 53px 20px;
+    grid-template-rows: 214px 130px 55px 12px ;
+    gap: 9px ;
+    width: 418px;
+    height:438px;
+  }
+  .yellow{
+    background-color: yellow;
+
+  }
+  .blue{
+background-color: blue;
+  }
+  .pink{
+    background-color: #d5a7a7;
+  }
+.red{
+    background-color: #e35858;
+}
+
+.grey{
+    background-color: grey;
+}
+.grey1
+{
+    grid-column: span 3;
+}
+   .grey2
+{
+    grid-row: span 2;
+}
+.grey3
+{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+    .heading{
+        font-size: 54px;
+        color: rgb(0, 0, 0);
+        font-family: cursive;
+        text-shadow: 5px 5.6px 8px rgb(36, 16, 16);
+padding: 34px;
+       }
+    </style>
+</head>
+<body>
+   
+<div class="heading"
+>Mondrian Painting</div>
+    <div class="mainbox">
+         <div class="red"></div>
+         <div class="grey grey1"></div>
+         <div class="grey grey2"></div>
+         <div class="grey grey3"></div>
+        <div class="blue"></div>
+        <div class="grey"></div>
+        <div class="grey"></div>
+        <div class="yellow"></div>
+        <div class="pink"></div>
+
+         
+
+
+    </div>
+</body>
+</html>
